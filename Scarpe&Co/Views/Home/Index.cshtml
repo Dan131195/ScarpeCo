@@ -2,12 +2,14 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="hero-section m-auto mt-2">
-    <h1>Benvenuto nel nostro negozio di scarpe sportive!</h1>
+<div class="hero-section m-auto mt-5">
+    <h1 class="hero-title">Benvenuto nel nostro <span>negozio di scarpe sportive!</span></h1>
     <p class="sub-title">✨ Scopri il massimo della performance, comfort e stile! ✨</p>
     <p class="content">
-        Sei pronto a dare il massimo in ogni passo? Da noi troverai scarpe sportive pensate per ogni tipo di attività: dalla corsa alla palestra, dal basket al tennis, ma anche per il tuo look quotidiano. Ogni paio è progettato per offrirti il supporto che cerchi, con un design fresco e dinamico che non passa inosservato.
+        Sei pronto a dare il massimo in ogni passo? Da noi troverai scarpe sportive pensate per ogni tipo di attività: <strong>dalla corsa alla palestra, dal basket al tennis</strong>, ma anche per il tuo look quotidiano.
+        Ogni paio è progettato per offrirti il **supporto perfetto**, con un **design fresco e dinamico** che non passa inosservato.
     </p>
     <p class="cta">💥 Scegli la tua scarpa, scegli il tuo stile. 💥</p>
     <p class="cta">🔥 Fai il primo passo con noi. 🔥</p>
+    <a asp-controller="Prodotti" asp-action="Index" class="btn-primary">🏃‍♂️ Scopri le nostre scarpe</a>
 </div>

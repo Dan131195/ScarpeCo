@@ -1,4 +1,4 @@
-
+/* Stile globale */
 html {
     font-size: 14px;
     position: relative;
@@ -11,20 +11,15 @@ html {
     }
 }
 
-
 body {
+    font-family: 'SF Pro Display', Arial, sans-serif;
+    background: #f5f5f7 url('https://valsportrunning.com/cdn/shop/articles/Scarpe_running_a3_cosa_significa_III_1200x1200.jpg?v=1598277321') center/cover no-repeat;
+    color: #1d1d1f;
+    text-align: center;
     margin-bottom: 60px;
-    background: url('https://valsportrunning.com/cdn/shop/articles/Scarpe_running_a3_cosa_significa_III_1200x1200.jpg?v=1598277321') center/cover no-repeat;
 }
 
-.btn:focus,
-.btn:active:focus,
-.btn-link.nav-link:focus,
-.form-control:focus,
-.form-check-input:focus {
-    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
-}
-
+/* LOGHI */
 .logo, .logo2 {
     border-radius: 50%;
 }
@@ -38,28 +33,30 @@ body {
     margin-right: 5px;
 }
 
+/* HERO SECTION */
 .hero-section {
-    text-align: center;
-    background-color: #fff;
-    padding: 30px 40px;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     max-width: 800px;
-    width: 80%;
+    margin: 100px auto;
+    padding: 60px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    animation: fadeIn 1s ease-out;
 }
 
 @media (max-width: 768px) {
     .hero-section {
-        width: 90%;
-        padding: 20px 30px;
+        padding: 40px;
     }
 }
 
-h1 {
-    font-size: 2.5rem;
-    color: #333;
-    font-weight: bold;
-    margin-bottom: 20px;
+/* TESTI */
+h1, .hero-title {
+    font-size: 2.8rem;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 10px;
 }
 
 h2 {
@@ -67,48 +64,80 @@ h2 {
 }
 
 .sub-title {
-    font-size: 1.5rem;
-    color: #ff6347;
-    font-style: italic;
+    font-size: 1.4rem;
+    color: #6e6e73;
     margin-bottom: 20px;
 }
 
 .content {
     font-size: 1.2rem;
-    color: #555;
     line-height: 1.6;
+    color: #333;
     margin-bottom: 30px;
 }
 
-.cta {
-    font-size: 1.3rem;
-    font-weight: bold;
-    margin-top: 15px;
+/* BOTTONI */
+.cta-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
 }
 
-    .cta:first-of-type {
-        color: #ff6347;
+.btn-primary, .btn-secondary {
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: background 0.3s ease-in-out;
+}
+
+.btn-primary {
+    color: white;
+    background: black;
+}
+
+    .btn-primary:hover {
+        background: #333;
     }
 
-    .cta:last-of-type {
-        color: #32cd32;
+.btn-secondary {
+    color: black;
+    background: #e8e8ed;
+}
+
+    .btn-secondary:hover {
+        background: #d2d2d7;
     }
 
+/* EFFETTI E ANIMAZIONI */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* RESPONSIVE */
 @media (max-width: 768px) {
-    h1 {
-        font-size: 2rem;
+    .hero-title {
+        font-size: 2.2rem;
     }
 
-    .sub-title {
-        font-size: 1.2rem;
-    }
-
-    .content, .cta {
+    .sub-title, .content {
         font-size: 1.1rem;
     }
+
+    .btn-primary, .btn-secondary {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
 }
-
-
 .description {
     border-left: 5px solid blue !important;
 }

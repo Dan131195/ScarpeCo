@@ -4,9 +4,11 @@
 }
 <div class="container text-center">
     <h1 class="bg-white border border-1 rounded-1 mt-1 px-2">@Model.Nome</h1>
+
     <h4 class="text-dark bg-white d-inline px-3 py-2 border border-1 rounded-3">Prezzo: @Model.Prezzo € </h4>
     
     <p class="description bg-white rounded-1 p-2 mt-3 border border-1">@Model.Descrizione</p>
+	<span class="bg-white p-2"><strong>Codice Identificativo:</strong> @Model.Id</span>
     <div class="row mt-4">
         <div class="col-md-4">
             <img src="@Model.ImmagineCopertina" class="img-thumbnail" alt="@Model.Nome">
@@ -19,6 +21,6 @@
         </div>
     </div>
     
-    <a href="@Url.Action("Index")" class="btn btn-success mt-3 border border-1 border-white me-1">Torna alla vetrina</a>
+    <a href="@Url.Action("Index")" class="btn btn-dark mt-3 border border-1 border-white me-1">Torna alla vetrina</a>
     <a href="@Url.Action("Modifica", new { id = Model.Id })" class="btn btn-warning mt-3 border border-1 border-white">Modifica</a>
 </div>

@@ -24,6 +24,17 @@ body {
     background-size: cover;
 }
 
+.logo {
+    width:50px;
+    border-radius: 50%;
+}
+
+.logo2 {
+    width: 30px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
 .hero-section {
     text-align: center;
     background-color: #ffffff;

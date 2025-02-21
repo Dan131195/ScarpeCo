@@ -13,8 +13,8 @@
                     <img src="@prodotto.ImmagineCopertina" class="card-img-top" alt=@prodotto.Nome>
                     <div class="card-body text-center">
                         <h5 class="card-title">@prodotto.Nome</h5>
-                        <p class="card-text">@prodotto.Prezzo €</p>
-                        <a href="@Url.Action("Dettagli", new { id = prodotto.Id })" class="btn btn-primary">Dettagli</a>
+                        <p class="card-text btn btn-warning d-block w-50 m-auto">@prodotto.Prezzo €</p>
+                        <a href="@Url.Action("Dettagli", new { id = prodotto.Id })" class="btn btn-primary mt-2">Dettagli</a>
                     </div>
                 </div>
             </div>

@@ -1,0 +1,24 @@
+﻿@model List<Prodotto>
+@{
+    ViewData["Title"] = "Vetrina Prodotti";
+}
+<div class="container">
+    <h2 class="text-light my-2">Vetrina Prodotti</h2>
+    <a href="@Url.Action("Aggiungi")" class="btn btn-success mb-3 text-center m-auto">Aggiungi Nuovo Prodotto</a>
+    <div class="row">
+        @foreach (var prodotto in Model)
+        {
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="@prodotto.ImmagineCopertina" class="card-img-top" alt=@prodotto.Nome>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">@prodotto.Nome</h5>
+                        <p class="card-text">@prodotto.Prezzo €</p>
+                        <a href="@Url.Action("Dettagli", new { id = prodotto.Id })" class="btn btn-primary">Dettagli</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+

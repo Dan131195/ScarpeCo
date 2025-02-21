@@ -1,0 +1,98 @@
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    background-image: url('https://valsportrunning.com/cdn/shop/articles/Scarpe_running_a3_cosa_significa_III_1200x1200.jpg?v=1598277321');
+    background-position: center;
+    background-size: cover;
+}
+
+.hero-section {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 800px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.sub-title {
+    font-size: 1.5rem;
+    color: #ff6347;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.content {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.cta {
+    font-size: 1.3rem;
+    color: #0066cc;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+    .cta:first-of-type {
+        color: #ff6347;
+    }
+
+    .cta:last-of-type {
+        color: #32cd32;
+    }
+
+@media (max-width: 768px) {
+    .hero-section {
+        width: 90%;
+        padding: 20px 30px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .sub-title {
+        font-size: 1.2rem;
+    }
+
+    .content {
+        font-size: 1rem;
+    }
+
+    .cta {
+        font-size: 1.1rem;
+    }
+}
+
+h2 {
+    text-shadow: 2px 2px 1px black;
+}
